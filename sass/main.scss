@@ -16,7 +16,10 @@
 */
 
 @import "./utils/variables";
-@import "./pages/mentionsLegales";
-@import "./pages/home";
 @import "./base/base";
 @import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/content";
+@import "./layouts/footer";
+@import "./pages/home";
+@import "./pages/mentionsLegales";

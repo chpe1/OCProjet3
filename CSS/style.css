@@ -14,26 +14,22 @@
 @import "./pages/about";
 @import "./pages/project";
 */
-bodyMl {
-  background-color: white;
-  color: red;
-  font-family: Arial, Helvetica, sans-serif;
-}
-bodyMl__p {
-  text-align: justify;
+html {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.menus {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
-}
-.menus p {
-  width: 40%;
-}
-.menus img {
-  width: 100%;
+.btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #579c87;
+  color: #fdcb46;
+  border-radius: 10px 10px 10px 10px;
+  line-height: 20px;
+  vertical-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-top: 0;
 }
 
 header {
@@ -45,7 +41,6 @@ header {
   line-height: 100px;
   vertical-align: center;
   border: 1px solid #579c87;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 header > p {
@@ -56,6 +51,9 @@ header > p {
 
 .content {
   text-align: center;
+}
+.content__openMenu {
+  margin-bottom: 70px;
 }
 
 footer {
@@ -77,17 +75,25 @@ footer a {
   padding-right: 20px;
 }
 
-.btn {
-  display: inline-block;
-  text-align: center;
-  background-color: #579c87;
-  color: #fdcb46;
-  border-radius: 10px 10px 10px 10px;
-  line-height: 20px;
-  vertical-align: center;
-  font-weight: bold;
-  font-size: 3em;
-  padding: 1rem 1rem 1rem 1rem;
+.menus {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.menus p {
+  width: 40%;
+}
+.menus img {
+  width: 100%;
+}
+
+.bodyMl {
+  background-color: white;
+  color: black;
+}
+.bodyMl__p {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: $colourPrimary;
+    color: $colourSecondary;
+}
+
+footer a{
+    text-decoration: none;
+    color: $colourSecondary;
+    padding-left: 10px;
+    padding-right: 20px;
+}
