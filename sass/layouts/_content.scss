@@ -1,6 +1,47 @@
 .content{
     text-align: center;
-    &__openMenu{
-        margin-bottom: 70px;
+    margin-bottom: 70px;
+}
+
+.openMenu{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    &__image{
+        text-align: center;
+        img{
+            width: 50px;
+        }
+    }
+    .imageFinale {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        img{
+            width: 50px;
+            vertical-align: middle; 
+        }
+    }
+}
+
+.plats{
+    padding-left: 10%;
+    padding-right: 10%;
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        img{
+        vertical-align: middle;
+        }
+        img:nth-child(1){
+            float: left;
+        }
+        img:nth-child(2){
+            float: right;
+        }
+    }
+    &__price{
+        float: right;
+        font-weight: bold;
     }
 }

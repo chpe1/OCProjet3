@@ -18,6 +18,10 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+h2 {
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   text-align: center;
@@ -51,9 +55,50 @@ header > p {
 
 .content {
   text-align: center;
-}
-.content__openMenu {
   margin-bottom: 70px;
+}
+
+.openMenu {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+.openMenu__image {
+  text-align: center;
+}
+.openMenu__image img {
+  width: 50px;
+}
+.openMenu .imageFinale {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.openMenu .imageFinale img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.plats {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.plats__title {
+  text-align: center;
+  font-weight: bold;
+}
+.plats__title img {
+  vertical-align: middle;
+}
+.plats__title img:nth-child(1) {
+  float: left;
+}
+.plats__title img:nth-child(2) {
+  float: right;
+}
+.plats__price {
+  float: right;
+  font-weight: bold;
 }
 
 footer {
@@ -86,6 +131,17 @@ footer a {
 }
 .menus img {
   width: 100%;
+}
+
+.menu1 {
+  background-color: #fcdfdb;
+  color: #3d1319;
+}
+.menu1__fontLine {
+  font-family: "Roboto", sans-serif;
+}
+.menu1__fontTitle {
+  font-family: "Kaushan Script", cursive;
 }
 
 .bodyMl {
