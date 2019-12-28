@@ -22,6 +22,14 @@ h2 {
   text-align: center;
 }
 
+.marginLeft {
+  margin-left: 50px;
+}
+
+.marginRight {
+  margin-right: 50px;
+}
+
 .btn {
   display: inline-block;
   text-align: center;
@@ -59,9 +67,10 @@ header > p {
 }
 
 .openMenu {
-  width: 70%;
+  width: 1100px;
   margin: auto;
   text-align: left;
+  padding-bottom: 30px;
 }
 .openMenu__image {
   text-align: center;
@@ -142,6 +151,31 @@ footer a {
 }
 .menu1__fontTitle {
   font-family: "Kaushan Script", cursive;
+}
+
+.menu2 {
+  background-color: #fff5fe;
+}
+.menu2__fontLine {
+  font-family: "Roboto", sans-serif;
+  color: #cf8a3a;
+}
+.menu2__fontLine2 {
+  font-family: "Roboto", sans-serif;
+  color: #a56799;
+}
+.menu2__fontLine3 {
+  font-family: "Roboto", sans-serif;
+  color: #0905cf;
+}
+.menu2__fontTitle {
+  font-family: "Kaushan Script", cursive;
+  background: #d3813e;
+  /* Old browsers */
+  background: linear-gradient(to right, #d3813e 0%, #a56799 50%, #0905cf 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bodyMl {

@@ -9,3 +9,27 @@
     }
 }
 
+.menu2{
+    background-color: #fff5fe;
+    &__fontLine{
+        font-family: 'Roboto', sans-serif;
+        color: #cf8a3a;
+    }
+    &__fontLine2{
+        font-family: 'Roboto', sans-serif;
+        color : #a56799;
+    }
+    &__fontLine3{
+        font-family: 'Roboto', sans-serif;
+        color : #0905cf;
+    }
+    &__fontTitle{
+        font-family: 'Kaushan Script', cursive;
+        background: #d3813e; /* Old browsers */
+        // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
+        // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
+        background: linear-gradient(to right, #d3813e 0%, #a56799 50%, #0905cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
