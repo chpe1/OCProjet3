@@ -178,6 +178,23 @@ footer a {
   -webkit-text-fill-color: transparent;
 }
 
+.menu3 {
+  background-color: #edefef;
+}
+.menu3__fontLine {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.menu3__fontTitle {
+  font-family: "Kaushan Script", cursive;
+  background: #083de2;
+  /* Old browsers */
+  background: linear-gradient(to right, #083de2 0%, #0d8bfb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bodyMl {
   background-color: white;
   color: black;

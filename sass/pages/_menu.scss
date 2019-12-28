@@ -33,3 +33,20 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+.menu3{
+    background-color: #edefef;
+    &__fontLine{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+    &__fontTitle{
+        font-family: 'Kaushan Script', cursive;
+        background: #083de2; /* Old browsers */
+        // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
+        // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
+        background: linear-gradient(to right, #083de2 0%, #0d8bfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
