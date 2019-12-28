@@ -81,7 +81,7 @@ header > p {
 .openMenu .imageFinale {
   text-align: center;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 2em;
 }
 .openMenu .imageFinale img {
   width: 50px;
@@ -150,7 +150,8 @@ footer a {
   font-family: "Roboto", sans-serif;
 }
 .menu1__fontTitle {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Devonshire", cursive;
+  font-size: 3em;
 }
 
 .menu2 {
@@ -169,7 +170,7 @@ footer a {
   color: #0905cf;
 }
 .menu2__fontTitle {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Croissant One", cursive;
   background: #d3813e;
   /* Old browsers */
   background: linear-gradient(to right, #d3813e 0%, #a56799 50%, #0905cf 100%);
@@ -186,13 +187,32 @@ footer a {
   color: black;
 }
 .menu3__fontTitle {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Dancing Script", cursive;
   background: #083de2;
   /* Old browsers */
-  background: linear-gradient(to right, #083de2 0%, #0d8bfb 100%);
+  background: linear-gradient(to right, #083de2 0%, #567fff 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 3em;
+}
+
+.menu4 {
+  background-color: white;
+}
+.menu4__fontLine {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.menu4__fontTitle {
+  font-family: "Kaushan Script", cursive;
+  background: #60ac52;
+  /* Old browsers */
+  background: linear-gradient(to right, #60ac52 0%, #c0ff83 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
 }
 
 .bodyMl {

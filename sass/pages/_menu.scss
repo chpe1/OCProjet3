@@ -5,7 +5,8 @@
         font-family: 'Roboto', sans-serif;
     }
     &__fontTitle{
-        font-family: 'Kaushan Script', cursive;
+        font-family: 'Devonshire', cursive;
+        font-size: 3em;
     }
 }
 
@@ -24,7 +25,7 @@
         color : #0905cf;
     }
     &__fontTitle{
-        font-family: 'Kaushan Script', cursive;
+        font-family: 'Croissant One', cursive;
         background: #d3813e; /* Old browsers */
         // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
         // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
@@ -41,12 +42,31 @@
         color: black;
     }
     &__fontTitle{
-        font-family: 'Kaushan Script', cursive;
+        font-family: 'Dancing Script', cursive;
         background: #083de2; /* Old browsers */
         // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
         // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
-        background: linear-gradient(to right, #083de2 0%, #0d8bfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right, #083de2 0%, #567fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 3em;
+    }
+}
+
+.menu4{
+    background-color: white;
+    &__fontLine{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+    &__fontTitle{
+        font-family: 'Kaushan Script', cursive;
+        background: #60ac52; /* Old browsers */
+        // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
+        // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
+        background: linear-gradient(to right, #60ac52 0%, #c0ff83 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2em;
     }
 }
