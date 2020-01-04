@@ -15,4 +15,8 @@ footer a{
     color: $colourSecondary;
     padding-left: 10px;
     padding-right: 20px;
+    &:hover{
+        display: inline-block;
+        animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 3;
+    }
 }

@@ -14,12 +14,48 @@
 @import "./pages/about";
 @import "./pages/project";
 */
+@keyframes headshake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
 html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
 h2 {
   text-align: center;
+  font-weight: normal;
 }
 
 .marginLeft {
@@ -32,7 +68,7 @@ h2 {
 
 .btn {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   background-color: #579c87;
   color: #fdcb46;
   border-radius: 10px 10px 10px 10px;
@@ -42,6 +78,11 @@ h2 {
   font-size: 3em;
   padding: 1rem 1rem 1rem 1rem;
   margin-top: 0;
+  width: 400px;
+}
+.btn::after {
+  content: "";
+  animation: loading 6s infinite;
 }
 
 header {
@@ -67,7 +108,7 @@ header > p {
 }
 
 .openMenu {
-  width: 1100px;
+  width: 70%;
   margin: auto;
   text-align: left;
   padding-bottom: 30px;
@@ -101,13 +142,35 @@ header > p {
 }
 .plats__title img:nth-child(1) {
   float: left;
+  width: 30%;
 }
-.plats__title img:nth-child(2) {
+.plats__title img:nth-child(3) {
   float: right;
+  width: 30%;
 }
 .plats__price {
   float: right;
   font-weight: bold;
+}
+
+.under::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: red;
+  transition: 0.5s;
+}
+
+.plats__title:hover .under::after {
+  width: 100%;
+}
+
+.under {
+  width: 100px;
+  position: relative;
 }
 
 footer {
@@ -128,6 +191,10 @@ footer a {
   padding-left: 10px;
   padding-right: 20px;
 }
+footer a:hover {
+  display: inline-block;
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+}
 
 .menus {
   display: flex;
@@ -137,6 +204,9 @@ footer a {
 }
 .menus p {
   width: 40%;
+  animation: zoom 2s ease-in-out;
+  animation-delay: 400ms;
+  animation-fill-mode: both;
 }
 .menus img {
   width: 100%;
@@ -151,7 +221,7 @@ footer a {
 }
 .menu1__fontTitle {
   font-family: "Devonshire", cursive;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .menu2 {
@@ -171,12 +241,13 @@ footer a {
 }
 .menu2__fontTitle {
   font-family: "Croissant One", cursive;
-  background: #d3813e;
+  background: #e19f66;
   /* Old browsers */
-  background: linear-gradient(to right, #d3813e 0%, #a56799 50%, #0905cf 100%);
+  background: linear-gradient(to right, #e19f66 0%, #a56799 50%, #0905cf 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 3em;
 }
 
 .menu3 {
@@ -188,9 +259,7 @@ footer a {
 }
 .menu3__fontTitle {
   font-family: "Dancing Script", cursive;
-  background: #083de2;
-  /* Old browsers */
-  background: linear-gradient(to right, #083de2 0%, #567fff 100%);
+  background: linear-gradient(to right, #023be3 0%, #86c0f4 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -206,9 +275,7 @@ footer a {
 }
 .menu4__fontTitle {
   font-family: "Kaushan Script", cursive;
-  background: #60ac52;
-  /* Old browsers */
-  background: linear-gradient(to right, #60ac52 0%, #c0ff83 100%);
+  background: linear-gradient(to right, #182117 0%, #92d968 50%, #bfff80 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

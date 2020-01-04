@@ -6,7 +6,7 @@
     }
     &__fontTitle{
         font-family: 'Devonshire', cursive;
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
@@ -26,12 +26,13 @@
     }
     &__fontTitle{
         font-family: 'Croissant One', cursive;
-        background: #d3813e; /* Old browsers */
+        background: #e19f66; /* Old browsers */
         // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
         // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
-        background: linear-gradient(to right, #d3813e 0%, #a56799 50%, #0905cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right, #e19f66 0%, #a56799 50%, #0905cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 3em;
     }
 }
 
@@ -43,10 +44,10 @@
     }
     &__fontTitle{
         font-family: 'Dancing Script', cursive;
-        background: #083de2; /* Old browsers */
+        //background: #1a4ce3; /* Old browsers */
         // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
         // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
-        background: linear-gradient(to right, #083de2 0%, #567fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right, hsl(225,98%,45%) 0%, hsl(208,83%,74%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 3em;
@@ -61,10 +62,12 @@
     }
     &__fontTitle{
         font-family: 'Kaushan Script', cursive;
-        background: #60ac52; /* Old browsers */
+        //background: #60ac52; /* Old browsers */
         // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
         // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
-        background: linear-gradient(to right, #60ac52 0%, #c0ff83 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+        // background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 50%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 50%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 2em;
