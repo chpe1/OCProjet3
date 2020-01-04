@@ -49,10 +49,6 @@
     content: "";
   }
 }
-html {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 h2 {
   text-align: center;
   font-weight: normal;
@@ -202,14 +198,29 @@ footer a:hover {
   width: 100%;
   flex-wrap: wrap;
 }
-.menus p {
-  width: 40%;
+.menus__inner {
+  width: 500px;
+  min-height: 700px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.menus__inner img {
+  width: 30px;
+}
+.menus__inner__title {
+  margin-top: 300px;
   animation: zoom 2s ease-in-out;
   animation-delay: 400ms;
   animation-fill-mode: both;
 }
-.menus img {
-  width: 100%;
+.menus__inner__text {
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+.menus__inner a, .menus__inner a:hover, .menus__inner a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu1 {
@@ -218,14 +229,17 @@ footer a:hover {
 }
 .menu1__fontLine {
   font-family: "Roboto", sans-serif;
+  color: #3d1319;
 }
 .menu1__fontTitle {
   font-family: "Devonshire", cursive;
   font-size: 2em;
+  color: #3d1319;
 }
 
 .menu2 {
   background-color: #fff5fe;
+  color: #cf8a3a;
 }
 .menu2__fontLine {
   font-family: "Roboto", sans-serif;
@@ -247,11 +261,12 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .menu3 {
   background-color: #edefef;
+  color: #023be3;
 }
 .menu3__fontLine {
   font-family: "Roboto", sans-serif;
@@ -263,11 +278,12 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .menu4 {
   background-color: white;
+  color: #92d968;
 }
 .menu4__fontLine {
   font-family: "Roboto", sans-serif;

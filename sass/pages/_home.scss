@@ -3,46 +3,39 @@
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
-    p{
-        width: 40%;
-        animation: zoom 2s ease-in-out;
-        animation-delay: 400ms;
-        animation-fill-mode: both;
-    }
-
-    img{
-        width: 100%;
-    }
-
-    // &__inner{
-    //     width: 500px;
-    //     min-height: 700px;
-    //     margin-top: 20px;
-    //     margin-bottom: 20px;
-    //     &--1{
-    //         background-color: $menu1Color;
-    //     }
-    //     &--2{
-    //         background-color: $menu2Color;
-    //         font-family: 'Croissant One', cursive;
-    //     }
-    //     &--3{
-    //         background-color: $menu3Color;
-    //         font-family: 'Dancing Script', cursive;
-    //     }
-    //     &--4{
-    //         background-color: $menu4Color;
-    //         font-family: 'Kaushan Script', cursive;
-    //     }
-    //     img{
-    //         width: 30px;
-    //     }
-    //     &__title{
-    //         margin-top: 300px;
-    //         color: #3d1319;
-    //     }
-    //     &__text{
-    //         color: #3d1319;
-    //     }
+    // p{
+    //     width: 40%;
+    //     animation: zoom 2s ease-in-out;
+    //     animation-delay: 400ms;
+    //     animation-fill-mode: both;
     // }
+
+    // img{
+    //     width: 100%;
+    // }
+
+    &__inner{
+        width: 500px;
+        min-height: 700px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+            width: 30px;
+        }
+        &__title{
+            margin-top: 300px;
+            animation: zoom 2s ease-in-out;
+            animation-delay: 400ms;
+            animation-fill-mode: both;
+        }
+        &__text{
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+        a, a:hover, a:visited{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
 }
