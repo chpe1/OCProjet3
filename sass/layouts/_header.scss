@@ -1,16 +1,13 @@
 header{
     background-color: $colourPrimary;
-    margin-top: 0;
-    margin-bottom: 0;
     width: 100%;
     text-align: center;
     line-height: 100px;
-    vertical-align: center;
-    border: 1px solid $colourPrimary;
 }
 
 header>p{
  color: $colourSecondary;
  font-size: 4em;
  font-weight: bold;
+ margin: 0;
 }

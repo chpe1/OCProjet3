@@ -1,6 +1,36 @@
+// Thème graphique général
 $colourPrimary: #579c87;
 $colourSecondary: #fdcb46;
+
+// Thème graphique Mentions légales
 $colourML : black;
 $background_ML : white;
 
+// Thème graphique Menu 1
+$backgroundMenu1 : #fcdfdb;
+$colorMenu1 : #3d1319;
+
+// Thème graphique Menu 2
+$backgroundMenu2 : #fff5fe;
+$colorMenu2a : #cf8a3a;
+$colorMenu2b :#a56799;
+$colorMenu2c : #0905cf;
+
+// Thème graphique Menu 3
+$backgroundMenu3 : #edefef;
+$colorMenu3a : #0743e4;
+$colorMenu3b : black;
+
+
+// Thème graphique Menu 4
+$backgroundMenu4 : white;
+$colorMenu4a : hsl(98, 60%, 63%);
+$colorMenu4b : black;
+
 $shakeIntensity: 2%;
+
+$breakpoints: (
+  'small': 375px,
+  'medium': 768px,
+  'large': 1024px
+)
