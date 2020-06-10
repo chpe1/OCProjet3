@@ -2,7 +2,7 @@ header{
     background-color: $colourPrimary;
     width: 100%;
     text-align: center;
-    line-height: 100px;
+    line-height: 242px;
 }
 
 header>p{
@@ -10,4 +10,12 @@ header>p{
  font-size: 4em;
  font-weight: bold;
  margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: $colourSecondary;
+    &:hover{
+        text-decoration: none; 
+    }
 }

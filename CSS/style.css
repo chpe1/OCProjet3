@@ -88,14 +88,15 @@ h2 {
   text-align: left;
   background-color: #579c87;
   color: #fdcb46;
-  border-radius: 10px 10px 10px 10px;
-  line-height: 20px;
+  border-radius: 25px 25px 25px 25px;
+  line-height: 120px;
   vertical-align: center;
   font-weight: bold;
-  font-size: 3em;
-  padding: 1rem 1rem 1rem 1rem;
-  margin-top: 0;
-  width: 400px;
+  font-size: 4em;
+  padding: 1rem 1rem 1rem 5rem;
+  margin-top: 90px;
+  margin-bottom: 0;
+  width: 650px;
 }
 .btn::after {
   content: "";
@@ -112,7 +113,7 @@ header {
   background-color: #579c87;
   width: 100%;
   text-align: center;
-  line-height: 100px;
+  line-height: 242px;
 }
 
 header > p {
@@ -122,9 +123,18 @@ header > p {
   margin: 0;
 }
 
+header a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+header a:hover {
+  text-decoration: none;
+}
+
 .content {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 222px;
+  height: 1863px;
 }
 
 footer {
@@ -132,11 +142,16 @@ footer {
   position: fixed;
   bottom: 0;
   justify-content: space-between;
-  height: 50px;
+  height: 137px;
   width: 100%;
   margin-bottom: 0px;
   background-color: #579c87;
   color: #fdcb46;
+  font-size: 2em;
+}
+
+footer p {
+  margin-top: 45px;
 }
 
 footer a {
@@ -157,8 +172,8 @@ footer a:hover {
   flex-wrap: wrap;
 }
 .menus__inner {
-  width: 500px;
-  min-height: 700px;
+  width: 543px;
+  min-height: 759px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -286,6 +301,7 @@ footer a:hover {
 .menu1 {
   background-color: #fcdfdb;
   color: #3d1319;
+  font-size: 2em;
   box-shadow: 8px 8px 8px grey;
 }
 .menu1__fontLine {
@@ -299,14 +315,15 @@ footer a:hover {
 }
 .menu1__fontTitle {
   font-family: "Devonshire", cursive;
-  font-size: 2em;
   color: #3d1319;
+  font-size: 1.5em;
 }
 
 .menu2 {
   background-color: #fff5fe;
   color: #cf8a3a;
-  box-shadow: 8px 8px 8px grey;
+  box-shadow: 8px 8px 8px #524d4d;
+  font-size: 2em;
 }
 .menu2__fontLine {
   font-family: "Roboto", sans-serif;
@@ -333,12 +350,13 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .menu3 {
   background-color: #edefef;
   color: #0743e4;
+  font-size: 2em;
   box-shadow: 8px 8px 8px grey;
 }
 .menu3__fontLine {
@@ -351,7 +369,7 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2em;
+  font-size: 1em;
 }
 .menu3 img {
   width: 100%;
@@ -360,6 +378,7 @@ footer a:hover {
 .menu4 {
   background-color: white;
   color: #92d968;
+  font-size: 2em;
   box-shadow: 8px 8px 8px grey;
 }
 .menu4__fontLine {
@@ -372,7 +391,7 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2em;
+  font-size: 1em;
 }
 .menu4 img {
   width: 100%;

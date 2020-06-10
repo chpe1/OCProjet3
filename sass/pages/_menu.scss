@@ -83,6 +83,7 @@
 .menu1{
     background-color: $backgroundMenu1;
     color: $colorMenu1;
+    font-size: 2em;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu1;
@@ -92,8 +93,8 @@
         }
     &__fontTitle{
         font-family: 'Devonshire', cursive;
-        font-size: 2em;
         color: $colorMenu1;
+        font-size: 1.5em;
     }
     box-shadow : 8px 8px 8px grey;
 }
@@ -101,7 +102,8 @@
 .menu2{
     background-color: $backgroundMenu2;
     color: $colorMenu2a;
-    box-shadow : 8px 8px 8px grey;
+    box-shadow : 8px 8px 8px rgb(82, 77, 77);
+    font-size: 2em;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu2a;
@@ -125,13 +127,14 @@
         background: linear-gradient(to right, $colorMenu2a 0%, $colorMenu2b 50%, $colorMenu2c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 
 .menu3{
     background-color: $backgroundMenu3;
     color: $colorMenu3a;
+    font-size: 2em;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu3b;
@@ -144,7 +147,7 @@
         background: linear-gradient(to right, $colorMenu3a 0%, #0a89fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2em;
+        font-size: 1em;
     }
     box-shadow : 8px 8px 8px grey;
     img{
@@ -155,6 +158,7 @@
 .menu4{
     background-color: $backgroundMenu4;
     color: $colorMenu4a;
+    font-size: 2em;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu4b;
@@ -167,7 +171,7 @@
         background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 50%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 2em;
+        font-size: 1em;
     }
     box-shadow : 8px 8px 8px grey;
     img{
