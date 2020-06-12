@@ -90,7 +90,6 @@ h2 {
   color: #fdcb46;
   border-radius: 25px 25px 25px 25px;
   line-height: 120px;
-  vertical-align: center;
   font-weight: bold;
   font-size: 4em;
   padding: 1rem 1rem 1rem 5rem;
@@ -100,7 +99,7 @@ h2 {
 }
 .btn::after {
   content: "";
-  animation: loading 6s infinite;
+  animation: loading 3s infinite;
 }
 @media all and (max-width: 768px) {
   .btn {
@@ -211,16 +210,21 @@ footer a:hover {
 }
 
 .openMenu {
-  width: 70%;
+  max-width: 1198px;
+  height: 1684px;
   margin: auto;
   text-align: left;
   padding-bottom: 30px;
+}
+.openMenu h2 {
+  margin-top: 0;
 }
 .openMenu__image {
   text-align: center;
 }
 .openMenu__image img {
-  width: 50px;
+  width: 130px;
+  margin-top: 77px;
 }
 .openMenu .imageFinale {
   text-align: center;
@@ -228,18 +232,21 @@ footer a:hover {
   font-size: 2em;
 }
 .openMenu .imageFinale img {
-  width: 50px;
+  width: 73px;
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 .plats {
   padding-left: 10%;
   padding-right: 10%;
   margin-right: 0;
+  margin-bottom: 100px;
 }
 .plats__title {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 .plats__title img {
   vertical-align: middle;
@@ -278,17 +285,6 @@ footer a:hover {
   font-weight: bold;
 }
 
-.under::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  background: black;
-  transition: 0.5s;
-}
-
 .plats__title:hover .under::after {
   width: 100%;
 }
@@ -298,10 +294,21 @@ footer a:hover {
   position: relative;
 }
 
+.under::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #cf8a3a;
+  transition: 0.5s;
+}
+
 .menu1 {
   background-color: #fcdfdb;
   color: #3d1319;
-  font-size: 2em;
+  font-size: 1.5em;
   box-shadow: 8px 8px 8px grey;
 }
 .menu1__fontLine {
@@ -328,6 +335,7 @@ footer a:hover {
 .menu2__fontLine {
   font-family: "Roboto", sans-serif;
   color: #cf8a3a;
+  font-size: 0.9em;
 }
 @media all and (max-width: 768px) {
   .menu2__fontLine {
@@ -337,10 +345,12 @@ footer a:hover {
 .menu2__fontLine2 {
   font-family: "Roboto", sans-serif;
   color: #a56799;
+  font-size: 0.9em;
 }
 .menu2__fontLine3 {
   font-family: "Roboto", sans-serif;
   color: #0905cf;
+  font-size: 0.9em;
 }
 .menu2__fontTitle {
   font-family: "Croissant One", cursive;
@@ -356,7 +366,7 @@ footer a:hover {
 .menu3 {
   background-color: #edefef;
   color: #0743e4;
-  font-size: 2em;
+  font-size: 1.7em;
   box-shadow: 8px 8px 8px grey;
 }
 .menu3__fontLine {
@@ -369,7 +379,7 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .menu3 img {
   width: 100%;
@@ -378,7 +388,7 @@ footer a:hover {
 .menu4 {
   background-color: white;
   color: #92d968;
-  font-size: 2em;
+  font-size: 1.5em;
   box-shadow: 8px 8px 8px grey;
 }
 .menu4__fontLine {
@@ -391,16 +401,24 @@ footer a:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .menu4 img {
   width: 100%;
 }
 
-.mealTitle {
-  padding-right: 25%;
+.marginTitle {
+  padding-top: 170px;
+  padding-bottom: 160px;
 }
 
+.fontTitle--size {
+  font-size: 3em;
+}
+
+/*.mealTitle{
+    padding-right: 25%;
+}*/
 .bodyMl {
   background-color: white;
   color: black;

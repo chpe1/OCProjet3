@@ -5,7 +5,6 @@
         color: $colourSecondary;
         border-radius: 25px 25px 25px 25px;
         line-height: 120px;
-        vertical-align: center;
         font-weight: bold;
         font-size: 4em;
         padding: 1rem 1rem 1rem 5rem;
@@ -14,7 +13,7 @@
         width: 650px;
         &::after{
             content: '';
-            animation: loading 6s infinite;
+            animation: loading 3s infinite;
         }
         @include tablet-only{
             width: 110px;

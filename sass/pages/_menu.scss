@@ -1,12 +1,17 @@
 .openMenu{
-    width: 70%;
+    max-width: 1198px;
+    height: 1684px;
     margin: auto;
     text-align: left;
-    padding-bottom: 30px;;
+    padding-bottom: 30px;
+    h2{
+        margin-top: 0;
+    }
     &__image{
         text-align: center;
         img{
-            width: 50px;
+            width: 130px;
+            margin-top: 77px;
         }
     }
     .imageFinale {
@@ -14,8 +19,9 @@
         font-weight: bold;
         font-size: 2em;
         img{
-            width: 50px;
+            width: 73px;
             vertical-align: middle; 
+            margin-right: 10px;
         }
     }
 }
@@ -24,9 +30,11 @@
     padding-left: 10%;
     padding-right: 10%;
     margin-right: 0;
+    margin-bottom: 100px;
     &__title {
         text-align: center;
         font-weight: bold;
+        margin-bottom: 50px;
         img{
             vertical-align: middle;
             width: 100%;
@@ -60,16 +68,7 @@
     }
 }
 
-.under::after{
-    content:"";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background: black;
-    transition: 0.5s;
-    }
+
 
 .plats__title:hover .under::after{
     width: 100%;
@@ -80,10 +79,22 @@
     position: relative;
   }
 
+.under::after{
+content:"";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 3px;
+background: $colorMenu2a;
+transition: 0.5s;
+}
+
 .menu1{
     background-color: $backgroundMenu1;
     color: $colorMenu1;
-    font-size: 2em;
+    font-size: 1.5em;
+    box-shadow : 8px 8px 8px grey;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu1;
@@ -96,7 +107,6 @@
         color: $colorMenu1;
         font-size: 1.5em;
     }
-    box-shadow : 8px 8px 8px grey;
 }
 
 .menu2{
@@ -107,6 +117,7 @@
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu2a;
+        font-size: 0.9em;
         @include tablet-only{
             width: 100%;
             }
@@ -114,10 +125,12 @@
     &__fontLine2{
         font-family: 'Roboto', sans-serif;
         color : $colorMenu2b;
+        font-size: 0.9em;
     }
     &__fontLine3{
         font-family: 'Roboto', sans-serif;
         color : $colorMenu2c;
+        font-size: 0.9em;
     }
     &__fontTitle{
         font-family: 'Croissant One', cursive;
@@ -134,7 +147,7 @@
 .menu3{
     background-color: $backgroundMenu3;
     color: $colorMenu3a;
-    font-size: 2em;
+    font-size: 1.7em;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu3b;
@@ -147,7 +160,7 @@
         background: linear-gradient(to right, $colorMenu3a 0%, #0a89fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     box-shadow : 8px 8px 8px grey;
     img{
@@ -158,7 +171,7 @@
 .menu4{
     background-color: $backgroundMenu4;
     color: $colorMenu4a;
-    font-size: 2em;
+    font-size: 1.5em;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu4b;
@@ -171,7 +184,7 @@
         background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 50%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     box-shadow : 8px 8px 8px grey;
     img{
@@ -179,6 +192,15 @@
     }
 }
 
-.mealTitle{
-    padding-right: 25%;
+.marginTitle{
+    padding-top: 170px;
+    padding-bottom: 160px;
 }
+
+.fontTitle--size{
+    font-size: 3em;
+}
+
+/*.mealTitle{
+    padding-right: 25%;
+}*/
