@@ -5,14 +5,21 @@ footer{
     justify-content: space-between;
     height: 137px;
     width: 100%;
-    margin-bottom: 0px;
     background-color: $colourPrimary;
     color: $colourSecondary;
     font-size: 2em;
+    @include tablet-only{
+        display: block;
+    }
 }
 
 footer p{
     margin-top: 45px;
+    font-family: 'Open Sans', sans-serif;
+    @include tablet-only{
+        margin-top: 5px;
+        text-align: center;
+    }
 }
 
 footer a{

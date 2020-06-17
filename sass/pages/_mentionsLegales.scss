@@ -3,5 +3,9 @@
     color: $colourML;
     &__p{
         text-align: justify;
+        @include tablet-only{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
     }
 }

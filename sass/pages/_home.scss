@@ -2,18 +2,23 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    max-width: 1600px;
+    margin: auto;
     flex-wrap: wrap;
     &__inner{
         width: 543px;
-        min-height: 759px;
+        height: 759px;
         margin-top: 20px;
         margin-bottom: 20px;
-        @include tablet-only{
-            width: 80%;
+        @include mobile-only{
+            width: 100%;
             margin: auto;
-            margin-bottom: 20px;
-            margin-top: 20px;
           }
+        @include tablet-only{
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         img{
             width: 30px;
         }

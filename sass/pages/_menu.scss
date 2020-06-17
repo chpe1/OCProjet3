@@ -1,6 +1,6 @@
 .openMenu{
     max-width: 1198px;
-    height: 1684px;
+    min-height: 1684px;
     margin: auto;
     text-align: left;
     padding-bottom: 30px;
@@ -43,7 +43,7 @@
                 text-align: center;
             }
         }
-        img:nth-child(1){
+        img:nth-child(1){ // trait gauche
             float: left;
             width: 30%;
             @include tablet-only{
@@ -52,7 +52,7 @@
                 text-align: center;
             }
         }
-        img:nth-child(3){
+        img:nth-child(3){ // trait droite
             float: right;
             width: 30%;
             @include tablet-only{
@@ -65,6 +65,12 @@
     &__price{
         float: right;
         font-weight: bold;
+        @include tablet-only{
+            margin: auto;
+            display: block;
+            float: none;
+            width: 70px;
+        }
     }
 }
 
@@ -78,17 +84,6 @@
     width: 100px;
     position: relative;
   }
-
-.under::after{
-content:"";
-position: absolute;
-left: 0;
-bottom: 0;
-width: 0;
-height: 3px;
-background: $colorMenu2a;
-transition: 0.5s;
-}
 
 .menu1{
     background-color: $backgroundMenu1;
@@ -107,6 +102,9 @@ transition: 0.5s;
         color: $colorMenu1;
         font-size: 1.5em;
     }
+    .under::after{
+        @include under($colorMenu1);
+        }
 }
 
 .menu2{
@@ -121,26 +119,39 @@ transition: 0.5s;
         @include tablet-only{
             width: 100%;
             }
+        .under::after{
+            @include under($colorMenu2a);
+            }    
     }
     &__fontLine2{
         font-family: 'Roboto', sans-serif;
         color : $colorMenu2b;
         font-size: 0.9em;
+        .under::after{
+            @include under($colorMenu2b);
+            }
     }
     &__fontLine3{
         font-family: 'Roboto', sans-serif;
         color : $colorMenu2c;
         font-size: 0.9em;
+        .under::after{
+            @include under($colorMenu2c);
+            }
     }
     &__fontTitle{
         font-family: 'Croissant One', cursive;
         background: $colorMenu2a; /* Old browsers */
-        // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
-        // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
-        background: linear-gradient(to right, $colorMenu2a 0%, $colorMenu2b 50%, $colorMenu2c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right, $colorMenu2a 0%, $colorMenu2b 50%, $colorMenu2c 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1em;
+        width: 400px;
+        margin: auto;
+        margin-top: 300px;
+        @include tablet-only{
+            width: 80%;
+        }
     }
 }
 
@@ -151,16 +162,22 @@ transition: 0.5s;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu3b;
+        .under::after{
+            @include under($colorMenu3b);
+            }
     }
     &__fontTitle{
         font-family: 'Dancing Script', cursive;
         // background: #1a4ce3; /* Old browsers */
         // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
         // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
-        background: linear-gradient(to right, $colorMenu3a 0%, #0a89fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right, #023de4 0%, #6db9fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.5em;
+        width: 60%;
+        margin: auto;
+        margin-top: 300px;
     }
     box-shadow : 8px 8px 8px grey;
     img{
@@ -175,16 +192,25 @@ transition: 0.5s;
     &__fontLine{
         font-family: 'Roboto', sans-serif;
         color: $colorMenu4b;
+        .under::after{
+            @include under($colorMenu4a);
+            }
     }
     &__fontTitle{
         font-family: 'Kaushan Script', cursive;
-        //background: #60ac52; /* Old browsers */
-        // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
-        // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
         background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 50%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.5em;
+        width: 50%;
+        margin: auto;
+        margin-top: 300px;
+        &--size{
+            font-size: 3em;
+            @include tablet-only{
+                font-size: 2em;
+            }
+        }
     }
     box-shadow : 8px 8px 8px grey;
     img{
@@ -195,10 +221,10 @@ transition: 0.5s;
 .marginTitle{
     padding-top: 170px;
     padding-bottom: 160px;
-}
-
-.fontTitle--size{
-    font-size: 3em;
+    @include tablet-only{
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
 }
 
 /*.mealTitle{

@@ -1,5 +1,4 @@
 .btn{
-        display: inline-block;
         text-align: left;
         background-color: $colourPrimary;
         color: $colourSecondary;
@@ -9,14 +8,16 @@
         font-size: 4em;
         padding: 1rem 1rem 1rem 5rem;
         margin-top: 90px;
-        margin-bottom: 0;
         width: 650px;
+        margin: auto;
         &::after{
             content: '';
             animation: loading 3s infinite;
         }
         @include tablet-only{
-            width: 110px;
-            font-size: 1em;
+            width: 70%;
+            font-size: 2.5em;
+            line-height: 60px;
+            padding-left: 3rem;
         }
     }

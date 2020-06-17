@@ -18,7 +18,7 @@ $colorMenu2c : #0905cf;
 
 // Thème graphique Menu 3
 $backgroundMenu3 : #edefef;
-$colorMenu3a : #0743e4;
+$colorMenu3a : #7b7e86;
 $colorMenu3b : black;
 
 
@@ -30,7 +30,19 @@ $colorMenu4b : black;
 $shakeIntensity: 2%;
 
 $breakpoints: (
-  'small': 375px,
+  'small': 543px,
   'medium': 768px,
-  'large': 1024px
-)
+  'large': 1024px,
+  'Xlarge': 2048px
+);
+
+@mixin under($background) { // Soulignement
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: $background;
+  transition: 0.5s;
+  }
