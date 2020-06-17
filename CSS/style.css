@@ -102,10 +102,10 @@ h2 {
 }
 @media all and (max-width: 768px) {
   .btn {
-    width: 70%;
-    font-size: 2.5em;
+    width: 90%;
+    font-size: 2em;
     line-height: 60px;
-    padding-left: 3rem;
+    padding-left: 1rem;
   }
 }
 
