@@ -95,6 +95,7 @@ h2 {
   margin-top: 90px;
   width: 650px;
   margin: auto;
+  font-family: "Open Sans", sans-serif;
 }
 .btn::after {
   content: "";
@@ -118,10 +119,16 @@ header {
 
 header > p {
   color: #fdcb46;
-  font-size: 4em;
+  font-size: 5em;
   font-weight: bold;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  letter-spacing: -3px;
+}
+@media all and (max-width: 768px) {
+  header > p {
+    font-size: 4em;
+  }
 }
 
 header a {
@@ -189,11 +196,16 @@ footer a:hover {
   height: 759px;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 @media all and (max-width: 543px) {
   .menus__inner {
     width: 100%;
     margin: auto;
+    height: 388px;
   }
 }
 @media all and (max-width: 768px) {
@@ -207,15 +219,9 @@ footer a:hover {
   width: 30px;
 }
 .menus__inner__title {
-  margin-top: 300px;
   animation: zoom 2s ease-in-out;
   animation-delay: 400ms;
   animation-fill-mode: both;
-}
-.menus__inner__text {
-  font-weight: bold;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.5em;
 }
 .menus__inner a, .menus__inner a:hover, .menus__inner a:visited {
   text-decoration: none;
@@ -266,48 +272,38 @@ footer a:hover {
   text-align: center;
   font-weight: bold;
   margin-bottom: 50px;
-}
-.plats__title img {
-  vertical-align: middle;
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 @media all and (max-width: 768px) {
-  .plats__title img {
-    margin: auto;
-    text-align: center;
+  .plats__title {
+    flex-direction: column;
   }
 }
 .plats__title img:nth-child(1) {
-  float: left;
   width: 30%;
+  max-height: 34px;
 }
 @media all and (max-width: 768px) {
   .plats__title img:nth-child(1) {
-    float: none;
-    display: block;
-    text-align: center;
+    margin: auto;
   }
 }
 .plats__title img:nth-child(3) {
-  float: right;
   width: 30%;
+  max-height: 34px;
 }
 @media all and (max-width: 768px) {
   .plats__title img:nth-child(3) {
-    float: none;
-    display: block;
-    text-align: center;
+    margin: auto;
   }
 }
 .plats__price {
-  float: right;
   font-weight: bold;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1160px) {
   .plats__price {
     margin: auto;
-    display: block;
-    float: none;
     width: 70px;
   }
 }
@@ -317,8 +313,12 @@ footer a:hover {
 }
 
 .under {
-  width: 100px;
   position: relative;
+}
+@media all and (max-width: 768px) {
+  .under {
+    margin: auto;
+  }
 }
 
 .menu1 {
@@ -326,20 +326,31 @@ footer a:hover {
   color: #3d1319;
   font-size: 1.5em;
   box-shadow: 8px 8px 8px grey;
+  font-family: "Roboto", sans-serif;
 }
 .menu1__fontLine {
-  font-family: "Roboto", sans-serif;
   color: #3d1319;
+  display: flex;
+  justify-content: space-between;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1160px) {
   .menu1__fontLine {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9em;
   }
 }
 .menu1__fontTitle {
   font-family: "Devonshire", cursive;
   color: #3d1319;
   font-size: 1.5em;
+}
+.menu1__fontText {
+  font-family: "Segoe Print", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3d1319;
 }
 .menu1 .under::after {
   content: "";
@@ -356,17 +367,29 @@ footer a:hover {
   background-color: #fff5fe;
   color: #cf8a3a;
   box-shadow: 8px 8px 8px #524d4d;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+}
+.menu2__disp {
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 1160px) {
+  .menu2__disp {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.menu2__fontText {
+  font-family: "Croissant One", cursive;
+  color: #cf8a3a;
+  font-size: 1.5em;
 }
 .menu2__fontLine {
-  font-family: "Roboto", sans-serif;
   color: #cf8a3a;
   font-size: 0.9em;
-}
-@media all and (max-width: 768px) {
-  .menu2__fontLine {
-    width: 100%;
-  }
 }
 .menu2__fontLine .under::after {
   content: "";
@@ -379,7 +402,6 @@ footer a:hover {
   transition: 0.5s;
 }
 .menu2__fontLine2 {
-  font-family: "Roboto", sans-serif;
   color: #a56799;
   font-size: 0.9em;
 }
@@ -394,7 +416,6 @@ footer a:hover {
   transition: 0.5s;
 }
 .menu2__fontLine3 {
-  font-family: "Roboto", sans-serif;
   color: #0905cf;
   font-size: 0.9em;
 }
@@ -417,8 +438,6 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
   font-size: 1em;
   width: 400px;
-  margin: auto;
-  margin-top: 300px;
 }
 @media all and (max-width: 768px) {
   .menu2__fontTitle {
@@ -430,11 +449,27 @@ footer a:hover {
   background-color: #edefef;
   color: #7b7e86;
   font-size: 1.7em;
+  font-family: "Roboto", sans-serif;
   box-shadow: 8px 8px 8px grey;
 }
+.menu3__fontText {
+  font-family: "Segoe Print", cursive;
+  color: #023de4;
+  font-size: 1.5em;
+}
 .menu3__fontLine {
-  font-family: "Roboto", sans-serif;
   color: black;
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 1160px) {
+  .menu3__fontLine {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
 }
 .menu3__fontLine .under::after {
   content: "";
@@ -454,8 +489,14 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
   font-size: 1.5em;
   width: 60%;
-  margin: auto;
-  margin-top: 300px;
+}
+.menu3__fontTitle--size {
+  font-size: 3em;
+}
+@media all and (max-width: 768px) {
+  .menu3__fontTitle--size {
+    font-size: 2em;
+  }
 }
 .menu3 img {
   width: 100%;
@@ -465,10 +506,28 @@ footer a:hover {
   background-color: white;
   color: #92d968;
   font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
   box-shadow: 8px 8px 8px grey;
 }
+.menu4__disp {
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 1160px) {
+  .menu4__disp {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+.menu4__fontText {
+  font-family: "Segoe Print", cursive;
+  color: #92d968;
+  font-size: 1.5em;
+}
 .menu4__fontLine {
-  font-family: "Roboto", sans-serif;
   color: black;
 }
 .menu4__fontLine .under::after {
@@ -483,14 +542,12 @@ footer a:hover {
 }
 .menu4__fontTitle {
   font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right, #182117 0%, #92d968 50%, #bfff80 100%);
+  background: linear-gradient(to right, #182117 0%, #92d968 40%, #bfff80 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5em;
   width: 50%;
-  margin: auto;
-  margin-top: 300px;
 }
 .menu4__fontTitle--size {
   font-size: 3em;
@@ -507,6 +564,7 @@ footer a:hover {
 .marginTitle {
   padding-top: 170px;
   padding-bottom: 160px;
+  margin: auto;
 }
 @media all and (max-width: 768px) {
   .marginTitle {
@@ -515,9 +573,6 @@ footer a:hover {
   }
 }
 
-/*.mealTitle{
-    padding-right: 25%;
-}*/
 .bodyMl {
   background-color: white;
   color: black;

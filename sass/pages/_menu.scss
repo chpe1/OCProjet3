@@ -35,54 +35,44 @@
         text-align: center;
         font-weight: bold;
         margin-bottom: 50px;
-        img{
-            vertical-align: middle;
-            width: 100%;
-            @include tablet-only{
-                margin: auto;
-                text-align: center;
-            }
+        display: flex;
+        justify-content: space-around;
+        @include tablet-only{
+            flex-direction: column;
         }
         img:nth-child(1){ // trait gauche
-            float: left;
             width: 30%;
+            max-height: 34px;
             @include tablet-only{
-                float: none;
-                display: block;
-                text-align: center;
+                margin: auto;
             }
         }
         img:nth-child(3){ // trait droite
-            float: right;
             width: 30%;
+            max-height: 34px;
             @include tablet-only{
-                float: none;
-                display: block;
-                text-align: center;
+                margin: auto;
             }
         }
     }
     &__price{
-        float: right;
         font-weight: bold;
-        @include tablet-only{
+        @include laptop-only{
             margin: auto;
-            display: block;
-            float: none;
             width: 70px;
         }
     }
 }
-
-
 
 .plats__title:hover .under::after{
     width: 100%;
 }
 
 .under{
-    width: 100px;
     position: relative;
+    @include tablet-only{
+        margin: auto;
+    }
   }
 
 .menu1{
@@ -90,17 +80,28 @@
     color: $colorMenu1;
     font-size: 1.5em;
     box-shadow : 8px 8px 8px grey;
+    font-family: 'Roboto', sans-serif;
     &__fontLine{
-        font-family: 'Roboto', sans-serif;
         color: $colorMenu1;
-        @include tablet-only{
+        display: flex;
+        justify-content: space-between;
+        @include laptop-only{
             width: 100%;
+            flex-direction: column;
+            text-align: center;
+            font-size: 0.9em;
             }
         }
     &__fontTitle{
         font-family: 'Devonshire', cursive;
         color: $colorMenu1;
         font-size: 1.5em;
+    }
+    &__fontText{
+        font-family: 'Segoe Print', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $colorMenu1;
     }
     .under::after{
         @include under($colorMenu1);
@@ -111,20 +112,31 @@
     background-color: $backgroundMenu2;
     color: $colorMenu2a;
     box-shadow : 8px 8px 8px rgb(82, 77, 77);
-    font-size: 2em;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    &__disp{
+        display: flex;
+        justify-content: space-between;
+        @include laptop-only{
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 0;
+            }
+    }
+    &__fontText{
+        font-family: 'Croissant One', cursive;
+        color: $colorMenu2a;
+        font-size: 1.5em;
+    }
     &__fontLine{
-        font-family: 'Roboto', sans-serif;
         color: $colorMenu2a;
         font-size: 0.9em;
-        @include tablet-only{
-            width: 100%;
-            }
         .under::after{
             @include under($colorMenu2a);
             }    
     }
     &__fontLine2{
-        font-family: 'Roboto', sans-serif;
         color : $colorMenu2b;
         font-size: 0.9em;
         .under::after{
@@ -132,7 +144,6 @@
             }
     }
     &__fontLine3{
-        font-family: 'Roboto', sans-serif;
         color : $colorMenu2c;
         font-size: 0.9em;
         .under::after{
@@ -146,9 +157,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1em;
-        width: 400px;
-        margin: auto;
-        margin-top: 300px;
+        width: 400px; // Permet de régler la taille du fond
         @include tablet-only{
             width: 80%;
         }
@@ -159,25 +168,40 @@
     background-color: $backgroundMenu3;
     color: $colorMenu3a;
     font-size: 1.7em;
+    font-family: 'Roboto', sans-serif;
+    &__fontText{
+        font-family: 'Segoe Print', cursive;
+        color : #023de4;
+        font-size: 1.5em;
+    }
     &__fontLine{
-        font-family: 'Roboto', sans-serif;
         color: $colorMenu3b;
+        display: flex;
+        justify-content: space-between;
+        @include laptop-only{
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            }
         .under::after{
             @include under($colorMenu3b);
             }
     }
     &__fontTitle{
         font-family: 'Dancing Script', cursive;
-        // background: #1a4ce3; /* Old browsers */
-        // background: -webkit-linear-gradient(left, #d3813e 0%,#0905cf 100%);
-        // background: -moz-linear-gradient(left, #d3813e 0%, #0905cf 100%); /* FF3.6-15 */
         background: linear-gradient(to right, #023de4 0%, #6db9fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.5em;
         width: 60%;
-        margin: auto;
-        margin-top: 300px;
+        &--size{
+            font-size: 3em;
+            @include tablet-only{
+                font-size: 2em;
+            }
+        }
     }
     box-shadow : 8px 8px 8px grey;
     img{
@@ -189,8 +213,24 @@
     background-color: $backgroundMenu4;
     color: $colorMenu4a;
     font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    &__disp{
+        display: flex;
+        justify-content: space-between;
+        @include laptop-only{
+            width: 100%;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            font-size: 0.9em;
+            }
+    }
+    &__fontText{
+        font-family: 'Segoe Print', cursive;
+        color : hsl(98, 60%, 63%);
+        font-size: 1.5em;
+    }
     &__fontLine{
-        font-family: 'Roboto', sans-serif;
         color: $colorMenu4b;
         .under::after{
             @include under($colorMenu4a);
@@ -198,13 +238,11 @@
     }
     &__fontTitle{
         font-family: 'Kaushan Script', cursive;
-        background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 50%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to right,hsl(114, 19%, 11%) 0%, hsl(98, 60%, 63%) 40%, hsl(90,100%,75%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.5em;
         width: 50%;
-        margin: auto;
-        margin-top: 300px;
         &--size{
             font-size: 3em;
             @include tablet-only{
@@ -221,12 +259,9 @@
 .marginTitle{
     padding-top: 170px;
     padding-bottom: 160px;
+    margin: auto;
     @include tablet-only{
         padding-top: 30px;
         padding-bottom: 25px;
     }
 }
-
-/*.mealTitle{
-    padding-right: 25%;
-}*/
