@@ -195,7 +195,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.5em;
-        width: 60%;
         &--size{
             font-size: 3em;
             @include tablet-only{
@@ -242,7 +241,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 1.5em;
-        width: 50%;
         &--size{
             font-size: 3em;
             @include tablet-only{

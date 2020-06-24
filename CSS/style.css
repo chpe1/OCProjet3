@@ -92,9 +92,8 @@ h2 {
   font-weight: bold;
   font-size: 4em;
   padding: 1rem 1rem 1rem 5rem;
-  margin-top: 90px;
   width: 650px;
-  margin: auto;
+  margin: 90px auto;
   font-family: "Open Sans", sans-serif;
 }
 .btn::after {
@@ -496,7 +495,6 @@ footer a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5em;
-  width: 60%;
 }
 .menu3__fontTitle--size {
   font-size: 3em;
@@ -555,7 +553,6 @@ footer a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5em;
-  width: 50%;
 }
 .menu4__fontTitle--size {
   font-size: 3em;
