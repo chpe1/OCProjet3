@@ -88,7 +88,7 @@ h2 {
   background-color: #579c87;
   color: #fdcb46;
   border-radius: 25px 25px 25px 25px;
-  line-height: 120px;
+  line-height: 115px;
   font-weight: bold;
   font-size: 4em;
   padding: 1rem 1rem 1rem 5rem;
@@ -201,10 +201,13 @@ footer a:hover {
   justify-content: center;
   flex-direction: column;
   opacity: 1;
-  transition: opacity 500ms ease-in-out;
 }
-.menus__inner:hover {
+.menus__inner .group {
+  transition: all 500ms ease-in-out;
+}
+.menus__inner:hover .group {
   opacity: 0.5;
+  transform: scale(1.2);
 }
 @media all and (max-width: 543px) {
   .menus__inner {
