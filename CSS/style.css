@@ -200,6 +200,11 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+.menus__inner:hover {
+  opacity: 0.5;
 }
 @media all and (max-width: 543px) {
   .menus__inner {
